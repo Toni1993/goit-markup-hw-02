@@ -51,6 +51,7 @@ li {
 /* footer */
 
 .address {
+    font-style: normal;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.71;
@@ -65,6 +66,7 @@ li {
 
 .studio-accent-white {
     color: #F5F4FA;
+    font-style: normal;
 }
 
 /* main secion2 */
@@ -96,7 +98,7 @@ li {
 /* main section 1 */
 
 .pic-backround {
-background-image: url(../images/Bg.jpg);
+    background-image: url(../images/Bg.jpg);
 }
 
 .pic-backround-title {
@@ -113,7 +115,7 @@ background-image: url(../images/Bg.jpg);
 .main-button {
     font-weight: bold;
     font-size: 16px;
-    line-height:1.87;
+    line-height: 1.87;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: var(--accent-color-blue);
@@ -133,7 +135,8 @@ background-image: url(../images/Bg.jpg);
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
- /* page  portfolio */
+
+/* page  portfolio */
 
 .portfolio-title {
     font-weight: bold;
