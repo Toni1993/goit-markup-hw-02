@@ -3,14 +3,10 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color:var(--main-text-color);
-    
+    color: var(--main-text-color);
 }
 
-
-
 :root {
-    
     --accent-color-blue: #2196F3;
     --title-text-color: #212121;
     --main-text-color: #757575;
@@ -19,6 +15,8 @@ body {
     --background-color-grey: #F5F4FA;
     --background-color-light-grey: #E5E5E5;
     --background-color-dark-grey: #2F303A;
+    --focus-color-text: #FFFFFF;
+    --address-link-color-footer: rgba(255, 255, 255, 0.6);
 }
 
 li {
@@ -31,12 +29,12 @@ li {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-text-color);
     text-decoration: none;
 }
 
 .accent-color-logo-title {
-    color: #2196F3;
+    color: var(--accent-color-blue);
 }
 
 .link {
@@ -65,11 +63,22 @@ li {
 }
 
 .address-link {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--main-text-color)
+}
+
+.address-link-color-footer {
+    color: var(--address-link-color-footer);
+}
+
+.address-link-color-footer:hover, 
+.address-link-color-footer:focus,
+.address-link:hover, 
+.address-link:focus {
+    color: var(--accent-color-blue);
 }
 
 .studio-accent-white {
-    color: #F5F4FA;
+    color: var(--background-color-grey);
     font-style: normal;
 }
 
@@ -79,6 +88,8 @@ li {
     font-family: var(---main-font);
     font-weight: bold;
     font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
     color: var(--title-text-color);
     text-decoration: none;
 }
@@ -111,7 +122,7 @@ li {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--focus-color-text);
 }
 
 /*  кнопка Заказать услугу */
@@ -121,7 +132,7 @@ li {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--focus-color-text);
     background-color: var(--accent-color-blue);
     cursor: pointer;
 }
@@ -139,6 +150,17 @@ li {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden
 }
 
 /* page  portfolio */
@@ -159,14 +181,20 @@ li {
 }
 
 .btn {
-    background: #F5F4FA;
+    background: var(--background-color-grey);
+    color: var(--title-text-color);
     border-radius: 4px;
-    cursor: pointer;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
 }
 
-.btn:hover, .btn:active {
+.btn:hover, .btn:focus {
     background: var(--accent-color-blue);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    color: white;
+    color: var(--focus-color-text);
+    border: none;
 }
