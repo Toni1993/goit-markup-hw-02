@@ -100,12 +100,16 @@ img {
     color: var(--background-color);
 }
 
-.address .link {
+
+.colfoot {
+    color: var(--address-link-color-footer);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+
+
 
 .address {
     font-style: normal;
