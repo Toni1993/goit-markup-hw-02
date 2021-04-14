@@ -31,6 +31,10 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 0;
 }
 
+button {
+    cursor: pointer;
+}
+
 ul, a {
     list-style-type: none;
     padding-left: 0;
@@ -43,8 +47,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-
-.nav {}
 
 /* header */
 
@@ -76,9 +78,10 @@ img {
 /* header-list */
 
 .logo-list {
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
@@ -97,6 +100,13 @@ img {
     color: var(--background-color);
 }
 
+.address .link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
 .address {
     font-style: normal;
     text-decoration: none;
@@ -106,15 +116,6 @@ img {
     color: var(--focus-color-text);
     margin: 0;
 }
-
-/* .container, .address {
-    width: 1230px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-} */
 
 /* main secion2 */
 
@@ -201,6 +202,10 @@ img {
 
 /* page  portfolio */
 
+.logo-list span {
+    color: var(--accent-color-accent);
+}
+
 /* секция  примеры наших работ */
 
 .portfolio-title {
@@ -227,6 +232,7 @@ img {
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
+    cursor: pointer;
 }
 
 .btn:hover, .btn:focus {
